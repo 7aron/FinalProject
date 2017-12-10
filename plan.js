@@ -25,9 +25,15 @@ document.getElementById('check').onclick = function () {
    && usernum !== "gurgen" && usernum !== "Gurgen"
    && usernum !== "noro dovlatyans" && usernum !== "Noro Dovlatyans"
    && usernum !== "noro Dovlatyans" && usernum !== "Noro dovlatyans"
+   && usernum !== "qyartuPenguins" && usernum !==  "Qyartu Penguins"
+   && usernum !== "qyartupenguins" && usernum !== "qyartupenguins"
+   && usernum !== "Qyartu penguins" && usernum !== "I like this Game"
+   && usernum !== "You are awesome" && usernum !== "you are awesome"
+   && usernum !== "You Are Awesome" && usernum !== "YOU ARE AWESOME"
+   && usernum !== "Expo-2017" && usernum !== "expo-2017"
 
   ) {
-    var anunner = ["Sorry, probably your name is not in our base.", "It seems to be an invalid value.", "Sorry, we could not find your name.", ];
+    var anunner = ["Sorry, probably the code is not in our base.", "It seems to be an invalid value.", "Try again!!!!", "Just DO IT!!!!", "Take the key from the url of this page!!!" ];
     var random = Math.floor(Math.random() * anunner.length);
     out.innerHTML = (anunner[random])
 
@@ -79,6 +85,17 @@ document.getElementById('check').onclick = function () {
   } else if (usernum === "noro dovlatyans" || usernum === "Noro Dovlatyans" || usernum === "noro Dovlatyans" || usernum === "Noro dovlatyans"){
     href.href= "dovlatyans.html";
     setTimeout('window.location.reload()',1000)
+  } else if (usernum === "qyartuPenguins" || usernum == "Qyartu Penguins" || usernum == "qyartupenguins" || usernum === "qyartupenguins" || usernum === "Qyartu penguins"){
+    href.href = "qyartPong.html";
+    setTimeout("window.location.reload()",1000)
+  } else if (usernum === "I like this Game"){
+    href.href = "runPenguinRun.html";
+    setTimeout("window.location.reload()",1000)
+  } else if (usernum === "You are awesome" || usernum === "you are awesome" || usernum === "You Are Awesome" || usernum == "YOU ARE AWESOME" ){
+    href.href = "runnerGame.html";
+    setTimeout("window.location.reload()",1000)
+  } else if (usernum === "Expo-2017" || usernum === "expo-2017"){
+    href.href = "ending.html"
   }
   else {
     alert("If you wrote your name that means you are reading this now! And if you are reading this i wanna say that i like you!!! And yes, this works only with your name!! ")
@@ -87,11 +104,3 @@ document.getElementById('check').onclick = function () {
   }
 
 };
-
-
-$(document).ready(function() {
-    $('.oopa').on('click', 'a', function() {
-        $('.oopa a').removeClass('active');
-        $(this).addClass('active');
-    });
-});

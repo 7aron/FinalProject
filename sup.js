@@ -1,3 +1,8 @@
+
+//This is not our Code, we just took it to make a surprise for one girl!!!
+
+
+
 var slideNow = 1;
 var slideCount = $('#slidewrapper').children().length;
 var slideInterval = 3000;
